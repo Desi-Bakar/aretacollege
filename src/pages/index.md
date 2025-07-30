@@ -12,24 +12,24 @@ description: Kurikulum IT dan Bisnis Digital yang dikembangkan sesuai dengan keb
   oleh mahasiswa/i kami cepat diserap didunia industri.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/gmbr_1.jpg
       text: Mahasiswa/i Areta Informatics College pada awal semestar yakni semester 1 dan semester 2 wajib
         untuk mengikuti kelas sertifikasi internasional. Sehingga diharapkan di
         tahun pertama saja mereka sudah dapat bekerja di bidang IT dan Bisnis
         Digital.
-    - image: /img/bisnis-digital.png
+    - image: /img/gmbr_2.jpg
       text: Mahasiswa/i Areta Informatics college mendapatkan matakuliah enterpreneurship, leadership dan
         juga public speaking. Keterampilan ini menjadi pondasi dasar untuk
         mereka mampu bersaing di dunia industri dan bisnis, Baik sebagai tenaga
         profesional di bidang IT, Digital Marketing maupun sebagai seorang
         pengusaha atau owner bisnis.
-    - image: /img/aic-yoga.png
+    - image: /img/gmbr_3.jpg
       text: >
         Mahasiswa/i Areta Informatics College diwajibkan untuk menjadi guru tamu di SMK-SMK,
         bertujuan agar skill dan kompetensi yang sudah didapat dikelas seperti
         skill IT, Digital Marketing dan Public Speaking bisa terasah secara
         langsung dengan berbagi ke siswa/i SMK.
-    - image: /img/aic-izmi.png
+    - image: /img/gmbr_4.jpg
       text: Mahasiswa/i Areta Informatics College disamping memiliki skill dan kompetensi untuk dapat
         bersaing di dunia kerja, juga memiliki skill dan kompetensi untuk
         menciptakan lapangan kerja dengan menjadi pengusaha.
