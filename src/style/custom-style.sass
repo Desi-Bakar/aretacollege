@@ -2,6 +2,9 @@
 
 .navbar .navbar-menu
   box-shadow: none !important
+  min-height: 60px // bikin navbar lebih tinggi
+  display: flex
+  align-items: center
 
 .content .taglist
   list-style: none
@@ -65,11 +68,17 @@
   color: $primary
 // Override for use of svg's from https://simpleicons.org/
 .icon svg
-  width: 0rem
-  height: 0rem
+  width: 10rem
+  height: 10rem
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
+  max-height: 150px // atur tinggi maksimum logo
+  height: auto
+  width: auto
+  max-height: 70px // atau sesuai tinggi navbar
+  display: block
+  object-fit: contain
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent

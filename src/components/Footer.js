@@ -1,17 +1,18 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import logo from "../img/logo.svg";
-import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import tiktok from "../img/social/tiktok.png"; // ✅ Sudah benar di-import
-import vimeo from "../img/social/vimeo.svg";
+import logo from "../img/social/facebook.svg";
+import facebook from "../img/social/facebook.png";
+import instagram from "../img/social/instagram.png";
+import tiktok from "../img/social/tiktokkk.png"; // ✅ Sudah benar di-import
+import vimeo from "../img/social/youtube.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-100 text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
-      <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
-        <div className="mr-12 hidden lg:block">
+<footer className="bg-blue-950 text-center text-neutral-300 dark:bg-blue-1000 dark:text-neutral-200 lg:text-left">
+  <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
+    <div className="mr-12 hidden lg:block">
+
           <span>Dapatkan koneksi dengan kami di jaringan sosial:</span>
         </div>
 

@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    
     title: "Kampus IT dan Bisnis Full Praktek Pengajar Praktisi di Tangerang",
     description:
       "Kampus IT dan Bisnis Digital Tangerang | Kuliah IT dan Bisnis Digital terbaik Tangerang | Training Mikrotik tangerang | Training MTCNA | Training Sertifikasi MTCNA | Training Sertifikasi Mikrotik | Official website Areta Informatics College dikembakangkan dengan framework GatsbyJS dan CMS Netlify.",
@@ -85,6 +86,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
+      
       resolve: "gatsby-plugin-sass",
       options: {
         sassOptions: {
@@ -118,6 +120,20 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Areta Informatics College`,
+        short_name: `AretaCollege`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#0a0a0a`,
+        display: `standalone`,
+        icon: `src/img/favicon.png`, // <- pastikan ini benar!
+      },
+    },
+    
+    {
+      
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
