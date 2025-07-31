@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 //import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import logo from "../img/areta_logo.png";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -51,6 +51,11 @@ const Navbar = () => {
             <li className="navbar-item" style={{padding: "0px"}}>
             <Link className="navbar-item" to="/contact">
               Contact
+            </Link>
+            </li>
+            <li className="navbar-item" style={{padding: "0px"}}>
+            <Link className="navbar-item" to="/pendaftaran">
+              Pendaftaran Kuliah
             </Link>
             </li>
             {/*
