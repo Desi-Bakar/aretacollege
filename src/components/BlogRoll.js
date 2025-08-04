@@ -36,12 +36,14 @@ const BlogRollTemplate = (props) => {
                   </div>
                 ) }
                 <p className="post-meta">
-                  <Link
-                    className="title has-text-primary is-size-4"
-                    to={post.fields.slug}
-                  >
-                    {post.frontmatter.title}
-                  </Link>
+                <Link
+                      style={{ color: "#00008B" }}
+                         className="title is-size-4"
+                         to={post.fields.slug}
+>
+                       {post.frontmatter.title}
+                </Link>
+
                   <span> &bull; </span>
                   <span className="subtitle is-size-5 is-block">
                     {post.frontmatter.date}

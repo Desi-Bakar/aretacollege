@@ -9,7 +9,7 @@ import vimeo from "../img/social/youtube.png";
 
 const Footer = () => {
   return (
-<footer className="bg-blue-950 text-center text-neutral-300 dark:bg-blue-1000 dark:text-neutral-200 lg:text-left">
+<footer className="bg-blue-950 text-center text-neutral-300 dark:bg-blue-950 dark:text-neutral-200 lg:text-left">
   <div className="flex items-center justify-center border-b-2 border-neutral-200 p-6 dark:border-neutral-500 lg:justify-between">
     <div className="mr-12 hidden lg:block">
 
@@ -17,18 +17,18 @@ const Footer = () => {
         </div>
 
         <div className="flex justify-center">
-          <Link to="/" className="mr-6 text-neutral-600 dark:text-neutral-200">
+          <a href={"https://www.facebook.com/AretaCollege/"} target="_blank" rel="noopener noreferrer" className="mr-6 text-neutral-600 dark:text-neutral-200">
             <img src={facebook} alt="Facebook" className="h-6 w-6" />
-          </Link>
-          <Link to="/" className="mr-6 text-neutral-600 dark:text-neutral-200">
+          </a>
+          <a href={"https://www.instagram.com/areta_informaticscollege/"} target="_blank" rel="noopener noreferrer" className="mr-6 text-neutral-600 dark:text-neutral-200">
             <img src={instagram} alt="Instagram" className="h-6 w-6" />
-          </Link>
-          <Link to="/" className="mr-6 text-neutral-600 dark:text-neutral-200">
+          </a>
+          <a href={"https://www.tiktok.com/@areta_informaticscollege"} target="_blank" rel="noopener noreferrer" className="mr-6 text-neutral-600 dark:text-neutral-200">
             <img src={tiktok} alt="TikTok" className="h-6 w-6" /> {/* ✅ Diubah dari twitter */}
-          </Link>
-          <Link to="/" className="mr-6 text-neutral-600 dark:text-neutral-200">
+          </a>
+          <a href={"http://www.youtube.com/@aretainformaticscollege6107"} target="_blank" rel="noopener noreferrer" className="mr-6 text-neutral-600 dark:text-neutral-200">
             <img src={vimeo} alt="Vimeo" className="h-6 w-6" />
-          </Link>
+          </a>
         </div>
       </div>
 
@@ -160,10 +160,10 @@ const Footer = () => {
   </div>
 
  
-  <div className="bg-black p-6 text-center text-white">
+  <div className="bg-neutral-300 p-6 text-center text-black">
     <span>© 2013-2024 Copyright: </span>
     <a
-      className="font-semibold text-neutral-600 text-white"
+      className="font-semibold text-neutral-600 text-blue-950"
       href="https://aretacollege.com/"
       >Areta Informatics College</a
     >
