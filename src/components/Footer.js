@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 
 import logo from "../img/social/facebook.svg";
-import facebook from "../img/social/facebook.png";
+import facebook from "../img/social/facebookk.png";
 import instagram from "../img/social/instagram.png";
 import tiktok from "../img/social/tiktokkk.png"; // ✅ Sudah benar di-import
 import vimeo from "../img/social/youtube.png";
