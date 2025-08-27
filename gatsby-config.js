@@ -85,6 +85,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-anchor-links",
     {
       
       resolve: "gatsby-plugin-sass",
@@ -94,6 +95,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/pages/biaya`,
+        name: "biaya-page",
+      },
+    },
+       
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",

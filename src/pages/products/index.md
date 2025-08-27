@@ -8,6 +8,7 @@ description: Belajar dan berlatih Networking seperti CISCO, MIKROTIK, Networking
   with Linux/UNIX, Linux Server, Hacking Penetration & Security, Firewall,
   Database MySQL/PostgreSQL/Oracle. Mendapatkan BONUS GRATIS Keahlian Web
   Design.
+
 intro:
   blurbs:
     - image: /img/aic-ayu-yoga.png
@@ -47,6 +48,11 @@ main:
     Programming.
 
     Mendapatkan Bonus GRATIS Keahlian: LINUX/UNIX Server
+  extra:
+    heading: Bisnis Digital
+    description: >
+      Anda akan belajar dan barlatih Mindset Digital Marketing, Funneling, Copy Writing, Landing Page,
+      Content Creative, and Video di bidang Bisnis Digital menggunakan Teknologi Internet.
   image1:
     alt: Teknik Informatika Sistem Informasi dan Bisnis Digital
     image: /img/aic-ayu-semangat.png
@@ -62,37 +68,4 @@ testimonials:
   - author: Areta Informatics College
     quote: Berlatih dengan terus mengulang ulangnya lebih cepat berhasil, walaupun
       anda bukan orang cerdas.
-full_image: /img/areta-4-mhs.jpg
-pricing:
-  heading: Biaya Kuliah
-  description: Kami memberikan kesempatan kapada calon mahasiswa/i untuk bergabung
-    bersama Areta Informatics College dengan investasi pendidikan yang
-    kompetitif dan dapat dicicil sesuai dengan program yang diambil.
-    Investasi  dapat di cicil per bulan atau per semester.
-  plans:
-    - description: "Anda akan belajar dengan skill dari dasar sampai tingkat mahir di
-        bidang:"
-      items:
-        - CISCO & Mikrotik
-        - Linux Server
-        - Security
-      plan: Teknik Informatika
-      price: 5.5K/Semester
-    - description: "Anda akan belajar dengan skill dari dasar sampai tingkat mahir di
-        bidang:"
-      items:
-        - UI/UX
-        - Full Stack Programming
-        - MySQL/PostgreSQL
-      plan: Sistem Informasi
-      price: 5,5K/Semerter
-    - description: "Anda akan belajar dengan skill dari dasar sampai tingkat mahir di
-        bidang:"
-      items:
-        - SEO
-        - Google Analytics
-        - FBAds & GoogleAds
-        - Youtube Marketing
-      plan: Digital Marketing
-      price: 12jt/thn
 ---

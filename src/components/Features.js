@@ -1,36 +1,48 @@
-import * as React from "react";
-import PropTypes from "prop-types";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import React from "react";
+import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
-    {gridItems.map((item) => (
-      <div key={item.text} className="column is-6">
-        <section className="section">
-          <div className="has-text-centered">
-            <div
+const FeatureGrid = ({ gridItems }) => {
+  return (
+    <div style={{ display: "flex", flexDirection: "column", gap: "30px" }}>
+      {gridItems.map((item, index) => (
+        <section
+          key={index}
+          className="card"
+          style={{
+            display: "flex",
+            flexDirection: index % 2 === 0 ? "row" : "row-reverse",
+            alignItems: "center",
+            borderRadius: "12px",
+            boxShadow: "0 6px 12px rgba(0, 0, 0, 0.1)",
+            padding: "50px",
+            backgroundColor: "#ffffff",
+            gap: "20px",
+          }}
+        >
+          {/* Gambar 30% */}
+          <div style={{ flex: "0 0 30%" }}>
+            <figure className="image is-inline-block" style={{ width: "100%" }}>
+              <PreviewCompatibleImage imageInfo={item} />
+            </figure>
+          </div>
+
+          {/* Teks 70% */}
+          <div style={{ flex: "0 0 70%", padding: "0 20px" }}>
+            <p
               style={{
-                width: "240px",
-                display: "inline-block",
+                color: "#222",
+                fontSize: "16px",
+                lineHeight: "1.5",
+                margin: 0,
               }}
             >
-              <PreviewCompatibleImage imageInfo={item} />
-            </div>
+              {item.text}
+            </p>
           </div>
-          <p>{item.text}</p>
         </section>
-      </div>
-    ))}
-  </div>
-);
-
-FeatureGrid.propTypes = {
-  gridItems: PropTypes.arrayOf(
-    PropTypes.shape({
-      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-      text: PropTypes.string,
-    })
-  ),
+      ))}
+    </div>
+  );
 };
 
 export default FeatureGrid;
