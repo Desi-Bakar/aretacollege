@@ -42,7 +42,7 @@ intro:
 main:
   image1:
     alt: Teknik Informatika Sistem Informasi dan Bisnis Digital
-    image: /img/aic-ayu-semangat.png
+    image: /img/semangat.png
   image2:
     alt: A green cup of a coffee on a wooden table
     image: /img/aic-berempat.png

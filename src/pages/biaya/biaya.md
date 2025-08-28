@@ -1,12 +1,6 @@
 ---
 templateKey: biaya-page
-path: /biaya-kuliah
-description: Kami memberikan kesempatan kepada calon mahasiswa/i untuk bergabung bersama Areta Informatics College dengan investasi pendidikan yang kompetitif.
-items:
-  - title: Teknik Informatika
-    price: Rp 5.5K/Semester
-  - title: Sistem Informasi
-    price: Rp 5.5K/Semester
-  - title: Digital Marketing
-    price: Rp 12jt/thn
+title: Biaya Kuliah Areta Informatics College
+heading: Rincian Biaya Kuliah Tahun Akademik 2025/2026
+description: Berikut adalah rincian biaya kuliah di Areta Informatics College untuk tahun akademik terbaru.
 ---

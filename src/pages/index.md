@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: Kampus IT Areta Informatics College
-image: /img/FLAYER DESAIN  WIBESITE.png
+image: /img/3.png
 heading: Kurikulum berbasis Industri
 subheading: Kampus IT Full Praktek
 mainpitch:
@@ -29,7 +29,7 @@ intro:
         bertujuan agar skill dan kompetensi yang sudah didapat dikelas seperti
         skill IT, Digital Marketing dan Public Speaking bisa terasah secara
         langsung dengan berbagi ke siswa/i SMK.
-    - image: /img/gmbr_4.jpg
+    - image: /img/gmbr_5.jpg
       text: Mahasiswa/i Areta Informatics College disamping memiliki skill dan kompetensi untuk dapat
         bersaing di dunia kerja, juga memiliki skill dan kompetensi untuk
         menciptakan lapangan kerja dengan menjadi pengusaha.

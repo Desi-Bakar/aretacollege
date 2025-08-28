@@ -4,7 +4,7 @@ title: Mengapa Memilih Kampus IT Tangerang di Areta Informatics College Adalah L
 date: 2024-08-19
 description: Dalam era digital yang semakin maju, kebutuhan akan ahli teknologi informasi (IT) terus meningkat. Tangerang, sebagai salah satu kota penyangga Jakarta, telah menjadi pusat pendidikan tinggi yang menawarkan berbagai program studi di bidang teknologi informasi. Salah satu institusi yang menonjol adalah Areta Informatics College. Dalam artikel ini, kita akan membahas secara mendalam mengapa Areta Informatics College adalah pilihan terbaik bagi Anda yang ingin menekuni dunia IT melalui jurusan Teknik Informatika.
 featuredpost: false
-featuredimage: /img/areta-college-kampus-it.jpg
+featuredimage: /img/areta-kampus-it.jpg
 tags:
   - Kampus IT Tangerang
   - Kampus IT Tangerang Selatan
@@ -17,7 +17,7 @@ tags:
   - Areta Informatics College
 ---
 
-![Kampus Full Praktik](/img/areta-college-kampus-it.jpg "Kampus Full Praktik")
+![Kampus Full Praktik](/img/areta-kampus-it.jpg "Kampus Full Praktik")
 Dalam era digital yang semakin maju, kebutuhan akan ahli teknologi informasi (IT) terus meningkat. Tangerang, sebagai salah satu kota penyangga Jakarta, telah menjadi pusat pendidikan tinggi yang menawarkan berbagai program studi di bidang teknologi informasi. Salah satu institusi yang menonjol adalah Areta Informatics College. Dalam artikel ini, kita akan membahas secara mendalam mengapa Areta Informatics College adalah pilihan terbaik bagi Anda yang ingin menekuni dunia IT melalui jurusan Teknik Informatika. 
 
 #### Kampus IT Tangerang: Pusat Pendidikan yang Berkembang Pesat

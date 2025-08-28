@@ -96,7 +96,7 @@ const Navbar = () => {
               </div>
 
               {/* Ganti tombol Biaya Kuliah menjadi anchor link */}
-              <Link className="navbar-item nav-link" to="/biaya/" onClick={() => setIsActive(false)}>Biaya Kuliah</Link>
+              <Link className="navbar-item nav-link" to="/biaya" onClick={() => setIsActive(false)}>Biaya Kuliah</Link>
 
               <Link className="navbar-item nav-link" to="/blog" onClick={() => setIsActive(false)}>Blog</Link>
               <Link className="navbar-item nav-link" to="/contact" onClick={() => setIsActive(false)}>Contact</Link>
@@ -124,7 +124,7 @@ const Navbar = () => {
         .nav-has-dropdown { position: relative; }
         .nav-trigger { padding: 0.5rem 0.75rem; border-radius: 8px; }
         .nav-dropdown {
-          position: absolute; top: calc(100% + 8px); left: 0; min-width: 220px; background: #0f1e4a;
+          position: absolute; top: calc(100% + 8px); left: 0; min-width: 220px; background: #004aad;
           border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.25); transform-origin: top;
           transform: scaleY(0.9) translateY(-6px); opacity: 0; pointer-events: none;
           transition: transform .22s ease, opacity .22s ease;
@@ -133,7 +133,7 @@ const Navbar = () => {
         .nav-dd-item {
           padding: 12px 18px;
           background: #ffcc00 !important;
-          color: #0f1e4a !important;
+          color: #0F1E4A !important;
           font-weight: bold;
           transition: background 0.2s ease, padding-left 0.2s ease, box-shadow 0.2s ease;
           box-shadow: 0 2px 6px rgba(0,0,0,0.1);
