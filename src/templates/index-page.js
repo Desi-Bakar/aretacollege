@@ -1,16 +1,16 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
-import { getImage } from "gatsby-plugin-image";
+import React from "react"
+import PropTypes from "prop-types"
+import { Link, graphql } from "gatsby"
+import { getImage } from "gatsby-plugin-image"
 
-import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
+import Layout from "../components/Layout"
+import Features from "../components/Features"
+import BlogRoll from "../components/BlogRoll"
+import HeroSlider from "../components/HeroSlider" // <-- komponen slider baru
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
-  image,
+  images,
   title,
   heading,
   subheading,
@@ -18,11 +18,11 @@ export const IndexPageTemplate = ({
   description,
   intro,
 }) => {
-  const heroImage = getImage(image) || image;
-
   return (
     <div>
-      <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      {/* Hero Slider */}
+      <HeroSlider images={images} title={title} subheading={subheading} />
+
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -39,7 +39,7 @@ export const IndexPageTemplate = ({
                   </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2"> 
+                      <h3 className="has-text-weight-semibold is-size-2">
                         {heading}
                       </h3>
                       <p>{description}</p>
@@ -54,9 +54,7 @@ export const IndexPageTemplate = ({
                     </div>
                   </div>
                   <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-3">
-                      Blog
-                    </h3>
+                    <h3 className="has-text-weight-semibold is-size-3">Blog</h3>
                     <BlogRoll />
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/blog">
@@ -71,11 +69,11 @@ export const IndexPageTemplate = ({
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  images: PropTypes.array,
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
@@ -84,15 +82,15 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
-};
+}
 
 const IndexPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
+        images={frontmatter.images}
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
@@ -101,8 +99,8 @@ const IndexPage = ({ data }) => {
         intro={frontmatter.intro}
       />
     </Layout>
-  );
-};
+  )
+}
 
 IndexPage.propTypes = {
   data: PropTypes.shape({
@@ -110,16 +108,16 @@ IndexPage.propTypes = {
       frontmatter: PropTypes.object,
     }),
   }),
-};
+}
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
     markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
+        images {
           childImageSharp {
             gatsbyImageData(quality: 100, layout: FULL_WIDTH)
           }
@@ -146,4 +144,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`;
+`

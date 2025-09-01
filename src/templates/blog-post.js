@@ -20,7 +20,7 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-      <div className="container content">
+      <div className="container content"> 
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
@@ -30,7 +30,7 @@ export const BlogPostTemplate = ({
             <h4 className="is-bold-light">{description}</h4>
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
+              <div style={{ marginTop: `4rem` }}> 
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map((tag) => (

@@ -1,7 +1,10 @@
 ---
 templateKey: index-page
 title: Kampus IT Areta Informatics College
-image: /img/3.png
+images:
+  - /img/3.png
+  - /img/4.png
+  - /img/5.png
 heading: Kurikulum berbasis Industri
 subheading: Kampus IT Full Praktek
 mainpitch:
