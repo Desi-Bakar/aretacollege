@@ -4,14 +4,14 @@ import BiayaKuliah from "../components/biayakuliah";
 
 const BiayaPage = () => {
   const images = [
-    "/img/contohh.jpg",
-    "/img/contohh.jpg",
-    "/img/contohh.jpg",
-    "/img/contohh.jpg",
-    "/img/contohh.jpg",
-    "/img/contohh.jpg",
-    "/img/contohh.jpg",
-    "/img/contohh.jpg",
+    "/img/1.png",
+    "/img/2.png",
+    "/img/33.png",
+    "/img/44.png",
+    "/img/55.png",
+    "/img/6.png",
+    "/img/7.png",
+    "/img/8.png",
   ];
 
   return (
