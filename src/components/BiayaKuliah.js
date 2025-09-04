@@ -8,7 +8,7 @@ const BiayaKuliah = ({ images }) => {
         {images.map((imgSrc, index) => (
           <div
             key={index}
-            className="w-full bg-white border-blue-900 rounded-xl shadow overflow-hidden mb-8"
+            className="w-full bg-white border-blue-900 hover:shadow-2xl hover:border-blue-700 transition duration-300 rounded-xl shadow overflow-hidden mb-8"
           >
             <img
               src={imgSrc}
