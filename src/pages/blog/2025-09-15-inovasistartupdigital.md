@@ -4,7 +4,7 @@ title: Inovasi Startup Digital Berbasis Teknik Informatika
 date: 2025-09-15
 description: Pelajari bagaimana teknik informatika mendorong inovasi startup digital melalui pengembangan aplikasi, big data, AI, dan keamanan siber untuk menciptakan bisnis yang efisien, kompetitif, serta siap bersaing di era ekonomi digital.
 featuredpost: false
-featuredimage: /img/inovasibisnis.jpg
+featuredimage: /img/inovasistartup.jpg
 tags:
 - Startup Digital
 - Inovasi Teknologi
