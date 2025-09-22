@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import { format } from "date-fns";
 
 // eslint-disable-next-line
 export const BlogPostTemplate = ({
@@ -13,24 +14,28 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  date,
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
+  const formattedDate = date ? format(new Date(date), "MMMM dd, yyyy") : "";
 
   return (
     <section className="section">
       {helmet || ""}
-      <div className="container content"> 
+      <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
-            {/*<p>{description}</p>*/}
+            {formattedDate && (
+              <p className="is-size-6 has-text-grey">{formattedDate}</p>
+            )}
             <h4 className="is-bold-light">{description}</h4>
             <PostContent content={content} />
             {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}> 
+              <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
                 <ul className="taglist">
                   {tags.map((tag) => (
@@ -53,6 +58,7 @@ BlogPostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  date: PropTypes.string,
   helmet: PropTypes.object,
 };
 
@@ -65,6 +71,7 @@ const BlogPost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        date={post.frontmatter.date}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -95,7 +102,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date
         title
         description
         tags
